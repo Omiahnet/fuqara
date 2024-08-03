@@ -1,0 +1,170 @@
+
+.office_img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;    
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    width:700px;
+  }
+  
+  
+  .nav-link {    
+    color: rgb(171, 203, 221) !important;    
+}
+
+  .nav-link.active {    
+    color: white !important;    
+}
+
+  .navbar-nav  .nav-link:hover {
+    background-color: #138F71 !important;
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: #BCF6E8 !important;
+    color: black !important;
+}
+
+
+
+
+
+
+.mainnav_style {
+    font-family:GE Dinkum;
+    font-size:22px;
+}
+
+.nav_bg {
+   background-color: #FAF3E0;     
+}
+
+ .law_header {
+    font-family:GE Dinkum;font-size:22px;
+
+    color:#00453E;
+
+    text-align : center;
+ }
+
+   .dash_board {
+              font-family:GE Dinkum;font-size:20px;
+   }
+     .dashy_board {
+              font-family:GE Dinkum;font-size:16px;
+              font-family:arial;font-size:20px;
+              text-align: center;
+   }
+
+   .case_board {
+              font-family:GE Dinkum;font-size:24px;color:black;
+   }
+
+  .calendar_txt {
+       font-family:GE Dinkum;font-size:18px;
+        color:black;
+   }
+
+   .form_label {
+       font-family:GE Dinkum;font-size:17px;color:gray;}
+
+   .form_button {
+       font-family:GE Dinkum;font-size:17px;
+        color:whitek;
+   }
+
+
+      .doc_image {
+            border: 1px solid #ddd;
+           border-radius: 4px;
+           padding: 5px;
+           width: 100px;
+         }
+
+
+
+         .doc_image : hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+         }
+
+   .my_table {
+    font-family:GE Dinkum;font-size:20px;
+ }
+
+ .amount_txt
+    {
+         font-family:arial;font-size:16px;
+     }
+ .main_txt {
+    font-family:GE Dinkum;font-size:18px;
+    background-color:#EAEAEA;
+    color:black;
+     text-align : right;
+ }
+
+   .main_txt2 {
+    font-family:GE Dinkum;font-size:16px;
+ }
+
+.my_text {
+    font-family:GE Dinkum;font-size:20px;
+ }
+
+.aside_text {
+          font-family:GE Dinkum;font-size:16px;
+ }
+
+.jaber_txt {
+   font-family:GE Dinkum;font-size:22px;color:#063e53;
+}
+
+.report_header {
+    font-family:GE Dinkum;font-size:26px;color:#063e53;
+ }
+ 
+
+
+.jaber1_txt {
+   font-family:GE Dinkum;font-size:22px;color:#063e53;
+}
+
+.sidebar1_txt {
+                   font-family:GE Dinkum;font-size:20px;color:black; }
+
+.sidebar2_txt {
+                   font-family:GE Dinkum;font-size:18px;color:black; }
+
+.jaber2_txt {
+   font-family:GE Dinkum;font-size:20px;color:black;
+}
+
+.jaber3_txt {
+   font-family:GE Dinkum;font-size:18px;color:#444444;
+}
+
+.jaber_btn {
+   font-family:GE Dinkum;font-size:18px;color:white;
+}
+
+.hd_calandar {
+         width:180px;height:60px;border-style: solid;
+}
+
+.bg_calendar {
+  width:180px;height:115px;background-color:#E2E3E5;border-style: solid;border-color: red;}
+
+.header_details {
+  font-size:24px;font-family:GE Dinkum;color:black;background-color:#a1eff1;text-align:center;
+ }
+
+.system_btn {
+         background-color:#444444;font-size:18px;font-family:GE Dinkum; color:gray; }
+
+.system_btn:hover {
+         background-color:#444444;font-size:18px;font-family:GE Dinkum;color:#DB9437;}
+
+.amount_ty {
+         background-color:#444444;font-size:23px;font-family:GE Dinkum;color:#DB9437;
+}
