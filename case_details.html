@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>مكتب المحامي محمد يونس</title>
+         
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mystyle.css">        
+       
+       <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">    
+       <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        
+<!--        ooooooooooooooooooooooooo-->
+<!--   Main for btn btn-secondary-->
+    <!-- Theme style -->
+            <link rel="stylesheet" href="dist/css/adminlte.min.css">    <!-- Font Awesome -->
+       
+          <link rel="stylesheet" href="css/font-awesome.min.css">
+           
+  <!--        Bootstrap 4 RTL     -->
+  <!-- Custom style for RTL                       -->
+          <link rel="stylesheet" href="dist/css/custom.css">          
+          <link rel="stylesheet" href="css/btn btn-secondary.css">
+          <link rel="stylesheet" href="css/ahmad.css">
+<!--        ooooooooooooooooooooooooo-->
+
+
+
+
+        
+
+
+
+    </head>
+    <body>
+        <div class="container" style="text-align: center;">
+            <img src="img/header.png" >
+        </div> 
+        
+       <!-- oooooooooooooooo -->
+       <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #10765d;font-family:GE Dinkum;font-size:22px;">
+        <div class="container-fluid">
+            <!-- Brand/logo -->
+           
+            <span style="font-family:GE Dinkum;font-size:20px;color:rgb(218, 212, 212);">المستخدم : </span> 
+            <span style="font-family:GE Dinkum;font-size:24px;color:white;"> مدير المكتب</span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-navv ms-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link navv-link active" aria-current="page" href="index.html" style="font-family:GE Dinkum;font-size:22px;color:white;">الشاشة الرئيسة</a>
+              </li>
+      
+      
+               <li class="nav-item dropdown">
+                <a class="nav-link navv-link dropdown-toggle jaber_txt" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                  الموكلين
+                </a>
+                <ul class="dropdown-menu"  style="text-align:right;">
+                  <li><a class="dropdown-item jaber_txt disabled" href="{% url 'clients:add_client' %}">اضافة موكل جديد</a></li>
+                  
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">ملفات الموكلين</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item jaber_txt" href="all_clients.html">عرض كافة الموكلين</a></li>
+                </ul>
+              </li>
+      
+                   
+      
+               <li class="nav-item dropdown">
+                <a class="nav-link navv-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                     القضايا
+      
+                </a>
+                <ul class="dropdown-menu"  style="text-align:right;">
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">اضافة قضية جديدة</a></li>
+                    <li><a class="dropdown-item jaber_txt disabled" href="#">اقفال قضية منتهية</a></li>
+                  <li><a class="dropdown-item jaber_txt disabled" href="#"> ارشيف القضايا</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item jaber_txt" href="all_cases.html">كشف كافة القضايا</a></li>
+                </ul>
+              </li>
+      
+                <li class="nav-item dropdown">
+                <a class="nav-link navv-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                    الجلسات
+      
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">اضافة جلسة جديدة</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">عرض كل الجلسات</a></li>
+                </ul>
+              </li>
+      
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link navv-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                 إدارة الوثائق
+                </a>
+                <ul class="dropdown-menu"  style="text-align:right;">
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">اضافة وثيقة للقضية</a></li>
+                    <li><a class="dropdown-item jaber_txt disabled" href="#">اضافة وثيقة للموكل</a></li>
+                     <li><a class="dropdown-item jaber_txt disabled" href="#">تحميل السندات المالية</a></li>
+                   <li><a class="dropdown-item jaber_txt disabled" href="#">تحميل الوكالات</a></li>
+                </ul>
+              </li>
+      
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link navv-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                 ملاحظات القضايا
+                </a>
+                <ul class="dropdown-menu"  style="text-align:right;">
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">اضافة ملاحظات جديدة</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">عرض جميع الملاحظات</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link navv-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                       الاستشارات
+                </a>
+                <ul class="dropdown-menu"  style="text-align:right;">
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">اضافة استشارة جديدة</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">عرض جميع الاستشارات </a></li>
+                </ul>
+              </li>
+      
+               <li class="nav-item dropdown" >
+                <a class="nav-link navv-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                      الادارة المالية
+                </a>
+                <ul class="dropdown-menu"   style="text-align:right;">
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">دفعة مالية جديدة</a></li>
+                     <li><a class="dropdown-item jaber_txt disabled" href="#">كشف الحساب</a></li>
+                  <li><a class="dropdown-item jaber_txt disabled" href="#">السندات</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item jaber_txt disabled" href="#">الصندوق</a></li>
+      
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link navv-link disabled">مغادرة</a>
+              </li>
+      
+      
+            </ul>
+      
+            <form class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="ابحث عن" aria-label="Search" style="color:white;">
+              <button class="btn btn-outline-success" type="submit">البحث</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+       <!-- oooooooooooooooo  -->
+      <style>          
+
+         .navtabs .navlink {
+          border-radius: 0;
+          margin-right: 1px;
+          font-size:20px;
+      }
+  
+      .navtabs .navlink.active {
+          background-color: #007bff; /* Custom background color for active tab */
+          color: #fff; /* Custom text color for active tab */
+          border-color: #007bff; /* Custom border color for active tab */
+          font-size:20px;
+      }
+  
+      .tab-content {
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-top: none;           
+      }
+
+      .tab_text_font {         
+        font-size:20px;
+      }
+
+      .navlink.active {    
+        color: white !important;    
+    }
+      </style>
+       <!-- uuuuuuuuuuuuuuuuuuuuu -->
+       
+       <br><br>
+           <div class="container" >
+            <ul class="nav nav-tabs" id="myTab" role="tablist" >
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active btn   btn-secondary" style="font-size: 18px;" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="fa fa-briefcase "> تفاصيل بيانات القضية  </span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-secondary me-1" style="font-size: 18px;" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><span class="fa fas fa-folder-open"> وثائق القضية </span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-secondary me-1" style="font-size: 18px" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false"><span class="fas fa-business-time"> جلسات القضية </span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-secondary me-1" style="font-size: 18px;" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><span class="fa fa fa-calculator"> المدفوعات المالية الخاصة بالقضية </span></button>
+              </li>
+            </ul>
+           </div>
+      
+      
+      <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" style="text-align: right;">           
+              <div class="container">
+                        <h5 style="font-size:24px;font-family:GE Dinkum;color:black;background-color:#cdf2f3;text-align:center;">  تفاصيل القضية</h5><hr>
+                        <h5 style="font-size:22px;font-family:GE Dinkum">  رقم القضية <b>1</b></h5>
+                        <h5 style="font-size:22px;font-family:GE Dinkum">  رقم القضية في المحكمة : <b> 165 </b></h5>
+                        <h5 style="font-size:22px;font-family:GE Dinkum">  نوع القضية : <b> قضية مدنية </b></h5>
+                        <h5 style="font-size:22px;font-family:GE Dinkum"> اسم المحكمة  : <b> مجكمة صلح عمان </b></h5>
+                        <h5 style="font-size:22px;font-family:GE Dinkum"> المحامي  : <b> محمد يونس ابو دحيلة </b></h5>
+                        <h5 style="font-size:22px;font-family:GE Dinkum"> تفاصيل القضية  :   خلاف على قطعة ارض   </h5><hr>
+
+                   <div class="row">
+                          <div   class="col md-5" style="background-color:#F4F5F6">
+                             <h5 style="font-size:24px;font-family:GE Dinkum;color:black;background-color:#cdf2f3;text-align:center;">  بيانات الموكل</h5><hr>
+                             <h5 style="font-size:22px;font-family:GE Dinkum"> اسم الموكل : <b>موكل رقم 1</b></h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  الهاتف : <b> 0786655443 </b></h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  الجنسية : اردني</h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  البريد الاكتروني : <b> client@gmail.com </b></h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  العنوان : <b> اربد شارع الجامعة </b></h5>
+                          </div>
+                          <div class="col md-5" style="background-color:#F4F5F6">
+                              <h5 style="font-size:24px;font-family:GE Dinkum;color:black;background-color:#cdf2f3;text-align:center;">  بيانات الخصم</h5><hr>
+                              <h5 style="font-size:22px;font-family:GE Dinkum">  اسم الخصم : خصم رقم 1</h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  الهاتف : 0796655443</h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  محامي الخصم : محامي خصم 1</h5>
+                             <h5 style="font-size:22px;font-family:GE Dinkum">  هاتف محامي الخصم  : 0785544334</h5>
+
+                         </div>
+                 </div>            
+             </div>
+          </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="text-align: right;">
+          <div class="container">
+            <table class="table table-secondary table-striped table-bordered table-sm  my_table" >
+              <thead >
+
+                <td> </td>
+                <td class="jaber1_txt">رقم الوثيقة</td>
+                 <td class="jaber1_txt">عنوان الوثيقة</td>
+                <td class="jaber1_txt">نوع الوثيقة</td>
+                <td class="jaber1_txt">تاريخ التحميل</td>
+                <td class="jaber1_txt">صورة الوثيقة</td>
+                  <td class="jaber1_txt">العمليات</td>
+              </thead>
+                  
+              <tr class="table-light">
+                <td style="text-align:center;"><i class="fas fa-folder-open nav-icon text-secondary" ></i></td>
+                <td  style="text-align:center;" class="jaber_txt">11</td>
+                <td class="jaber1_txt">عدم طلب شكوى</td>
+                <td  class="jaber1_txt">وثيقة قانونية</td>
+                <td  class="jaber2_txt">12-6-2024</td>
+                <td class="jaber2_txt"><img  src="img/law1.jpg" style="width:200px"></td>
+                <td class="jaber1_txt"> <button type="button" class="btn system_btn ">تفاصيل الوثيقة</button> </td>
+
+       </tr>
+             
+        </table>
+        </div>            
+        </div>
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" style="text-align: right;">
+          <div class="container">
+            <table class="table table-primary custom-table table-striped table-bordered table-sm  my_table">
+              <thead >
+
+                <td></td>
+
+                <td>رقم الجلسة</td>
+                <td>عنوان الجلسة</td>
+                <td>تاريخ الجلسة</td>
+                <td>المحامي المعين</td>
+                <td>القاضي</td>
+                <td>مكان الجلسة</td>
+                <td>الحالة القضائية</td>
+                 <td style="text-align:center;">العمليات</td>
+              </thead>
+
+
+        
+            <tr class="table-light">
+
+            <td style="text-align:center;"><i class="fas fa-gavel nav-icon text-secondary"></i></td>
+
+
+           <td>1 </td>
+           <td>استماع للشهود</td>
+            <td class="client_num">12-7-2024</td>
+            <td>محمد يونس ابودحيلة</td>
+            <td>قاضي رقم 1</td>
+            <td>محكمة صلح اربد</td>
+            <td>تحت التنفيذ</td>
+             <td  class="jaber2_txt">
+                   <button type="button" class="btn system_btn">تفاصيل الجلسة</button>
+            </td>
+
+       </tr>
+            
+        </table>
+        </div>            
+        </div>
+        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" style="text-align: right;">
+          <div class="container">
+            <div class="row" style="justify-content: center;">
+              <!-- start Col 1 -->
+             <div class="col-lg-3 col-3">   <!-- small box -->    <div class="small-box bg-secondary">    <div class="inner">
+                   <h4 style="font-family:GE Dinkum;font-size:35px;color:#DB9437;">4500</h4>
+                   <h5 style="font-family:GE Dinkum;font-size:22px;color:white;">مبلغ القضية كاملا </h5>
+                 </div>
+                 <div class="icon">
+                   <i class="fa fa-briefcase"></i>
+                 </div>
+   
+               </div>
+             </div>
+             <!-- end Col 1 -->
+                    <!-- start Col 1 -->
+             <div class="col-lg-3 col-3">   <!-- small box -->    <div class="small-box bg-secondary">    <div class="inner">
+                   <h4 style="font-family:GE Dinkum;font-size:35px;color:#DB9437;">3200</h4>
+                   <h5 style="font-family:GE Dinkum;font-size:22px;color:white;">مجموع الدفعات</h5>
+                 </div>
+                 <div class="icon">
+                   <i class="fa fa-briefcase"></i>
+                 </div>
+   
+               </div>
+             </div>
+             <!-- end Col 1 -->
+                    <!-- start Col 1 -->
+             <div class="col-lg-3 col-3">   <!-- small box -->    <div class="small-box bg-secondary">    <div class="inner">
+                   <h4 style="font-family:GE Dinkum;font-size:35px;color:#DB9437;">1300</h4>
+                   <h5 style="font-family:GE Dinkum;font-size:22px;color:white;">المبلغ المتبقي </h5>
+                 </div>
+                 <div class="icon">
+                   <i class="fa fa-briefcase"></i>
+                 </div>
+   
+               </div>
+             </div>
+             <!-- end Col 1 -->
+                    </div>  <!-- end Row -->
+                 <hr>
+            <table class="table  table-primary table-striped table-bordered table-sm  my_table">
+                  <thead >
+
+                    <td></td>
+
+                    <td class="jaber1_txt" style="text-align:center;">تاريخ الدفعة</td>
+                    <td class="jaber1_txt" style="text-align:center;">رقم سند القبض</td>
+                    <td class="jaber1_txt" style="text-align:center;">المبلغ المدفوع</td>
+                    <td style="width:400px;text-align:center;" class="jaber1_txt"  > ملاحظة</td>
+
+                     
+                  </thead>
+
+
+           
+                <tr class="table  table-light" >
+
+                    <td style="text-align:center;"><i class="fa fa-calculator nav-icon text-secondary"></i></td>
+                    <td  style="text-align:center;font-size:24px">12-06-2024</td>
+                    <td style="text-align:center;font-size:24px">132</td>
+                        <td style="text-align:center;font-size:24px">1500 </td>
+                    <td  class="jaber1_txt" style="text-align:center">دفعة اولى عن القضية</td>
+                     
+
+                </tr>
+                <tr class="table  table-light" >
+
+                  <td style="text-align:center;"><i class="fa fa-calculator nav-icon text-secondary"></i></td>
+                  <td  style="text-align:center;font-size:24px">22-07-2024</td>
+                  <td  style="text-align:center;font-size:24px">166</td>
+                      <td style="text-align:center;font-size:24px">1700 </td>
+                  <td  class="jaber1_txt" style="text-align:center">دفعة ثانية عن القضية</td>
+                            
+              </td>
+
+              </tr>
+                
+        </table>
+        </div>            
+        </div>
+        </div>
+
+       
+
+      
+        <script>
+          var firstTabEl = document.querySelector('#myTab li:last-child a')
+          var firstTab = new bootstrap.Tab(firstTabEl)
+        
+          firstTab.show()
+        </script>
+        
+       
+       <!-- uuuuuuuuuuuuuuuuuuu  -->
+    
+       
+        
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stylo.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <!-- AdminLTE App -->
+        <script type="text/javascript" src="dist/js/adminlte.js"></script>
+        <script src="js/jquery.min.js"></script>
+
+    </body>
+</html>
