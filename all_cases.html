@@ -21,10 +21,36 @@
   <!-- Custom style for RTL                       -->
           <link rel="stylesheet" href="dist/css/custom.css">          
           <link rel="stylesheet" href="css/ahmad.css">
-<!--        ooooooooooooooooooooooooo-->
+<!--        ooooooooooooooooooooooooo    173 216 230 -->
 
 
+     <style>
+            table {
+                     border: solid 1px black;
+                     width :75%;
+                     font-family:GE Dinkum;                     
+                     background-color:rgba(173,216,230,0.3);                     
+              }
 
+              thead {
+                     border: solid 2px black;
+                     text-align:center;
+                     background:  rgba(16,118,93,0.4);
+                     color: black;
+                     font-size:22px;
+              }
+                td {
+                     border: solid 1px black;
+                     text-align:center;
+                     font-size:20px;
+              }
+            
+            .number_intable {
+                 text-align:center;font-family:Arial;font-size:18px;
+           }
+
+
+       </style>
 
         
 
@@ -158,76 +184,79 @@
        <!-- oooooooooooooooo  -->
 
        <!-- uuuuuuuuuuuuuuuuuuuuu -->
-       <div class="container-fluid me-5 ms-5">
+       <div class="container-fluid">
 
         <br>
          <div class="row p-2 bg-light" style="text-align: center;" >
             <p  class="txt_client report_header">كشف بكافة القضايا</p>
+          </div> 
          <hr>
+        
 
-          <hr>
-         <div id="client_report" style="text-align: right;">
-          <table class="table table-secondary table-striped my_table" style="width:90%">
-            <thead style="text-align: center;">
-
-            <td class="jaber3_txt">رقم القضية</td>
-            <td class="jaber3_txt">اسم الموكل</td>
-            <td class="jaber3_txt">نوع الموكل</td>
-            <td class="jaber3_txt">هاتف الموكل</td>
-            <td class="jaber3_txt">الجلسات</td>
-            <td class="jaber3_txt">مبلغ القضية</td>
-             <td class="jaber3_txt">المدفوع</td>
-            <td class="jaber3_txt">المتبقي</td>
-            <td class="jaber3_txt">حالة القضية</td>
-             <td  class="jaber3_txt"style="text-align:center;">العمليات</td>
+          <div class="container-fluidt" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+          <table >
+            <thead>
+            <tr>
+            <td>رقم القضية</td>
+            <td>اسم الموكل</td>
+            <td>نوع الموكل</td>
+            <td>هاتف الموكل</td>
+            <td>الجلسات</td>
+            <td>مبلغ القضية</td>
+             <td>المدفوع</td>
+            <td>المتبقي</td>
+            <td>حالة القضية</td>
+             <td>العمليات</td>
+             <tr>
           </thead>
 
      
-            <tr class="table-bordered">
-                <td  style="text-align:center"   >1</td>
-                  <td class="jaber2_txt">موكل رقم 1</td>
-                  <td class="jaber2_txt">قضية مدنية</td>
-                  <td  style="text-align:center" >0786655434</td>
-                  <td  style="text-align:center" >4</td>
-                  <td style="font-size:23px;color:#DB9437;text-align:center" >4500</td>
-                  <td style="font-size:23px;color:#DB9437;text-align:center"  > 3200 </td>
-                  <td  style="font-size:23px;color:#DB9437;text-align:center" >1300</td>
-                  <td class="main_text" style="text-align:center">تحت التنفيذ</td>
+            <tr>
+                  <td class="number_intable">1</td>
+                  <td>موكل رقم 1</td>
+                  <td>قضية مدنية</td>
+                  <td  class="number_intable" >0786655434</td>
+                  <td  class="number_intable">4</td>
+                  <td class="number_intable">4500</td>
+                  <td class="number_intable"> 3200 </td>
+                  <td class="number_intable">1300</td>
+                  <td>تحت التنفيذ</td>
                   <td style="text-align:center" >
                         <a href="case_details.html">
                         <button type="button" class="btn system_btn btn-sm">شاهد تفاصيل القضية</button></a>             
                   </td>
             </tr>            
             
-            <tr class="table-bordered">
-              <td  style="text-align:center"   >2</td>
-                <td class="jaber2_txt">موكل رقم 2</td>
-                <td class="jaber2_txt">قضية مدنية</td>
-                <td  style="text-align:center" >0787676488</td>
-                <td  style="text-align:center" >2</td>
-                <td style="font-size:23px;color:#DB9437;text-align:center" >700</td>
-                <td style="font-size:23px;color:#DB9437;text-align:center"  > 600 </td>
-                <td  style="font-size:23px;color:#DB9437;text-align:center" >100</td>
-                <td class="main_text" style="text-align:center">استئناف</td>
+            <tr>
+                <td class="number_intable">2</td>
+                <td>موكل رقم 2</td>
+                <td>قضية مدنية</td>
+                <td class="number_intable">0787676488</td>
+                <td class="number_intable">2</td>
+                <td class="number_intable">700</td>
+                <td class="number_intable"> 600 </td>
+                <td class="number_intable">100</td>
+                <td>استئناف</td>
                 <td></td>
           </tr>   
 
-          <tr class="table-bordered">
-            <td  style="text-align:center"   >3</td>
-              <td class="jaber2_txt">موكل رقم 3</td>
-              <td class="jaber2_txt">قضية تجارية</td>
-              <td  style="text-align:center" >0786655434</td>
-              <td  style="text-align:center" >2</td>
-              <td style="font-size:23px;color:#DB9437;text-align:center" >2600</td>
-              <td style="font-size:23px;color:#DB9437;text-align:center"  >2600 </td>
-              <td  style="font-size:23px;color:#DB9437;text-align:center" >0</td>
-              <td class="main_text" style="text-align:center">التسوية</td>
+          <tr>
+            <td class="number_intable">3</td>
+              <td>موكل رقم 3</td>
+              <td>قضية تجارية</td>
+              <td class="number_intable">0786655434</td>
+              <td class="number_intable">2</td>
+              <td class="number_intable">2600</td>
+              <td class="number_intable">2600 </td>
+              <td  class="number_intable">0</td>
+              <td>التسوية</td>
               <td></td>
         </tr>   
 
             
          </table>
      </div>
+
 </div>
 </div>
        <!-- uuuuuuuuuuuuuuuuuuu  -->
